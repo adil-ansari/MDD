@@ -43,29 +43,29 @@ public class ReceiverApplock extends BroadcastReceiver {
         List<String> lockedApps = prefUtil.getLockedAppsList();
         String appRunning = utils.getLauncherTopApp();
         //String lastApp = utils.getLastApp();
-//        boolean checkSchedule = prefUtil.getBoolean("confirmSchedule");
-//        List<String> getWeekdaysListString = prefUtil.getDaysList();
-//        String startTimeHour = prefUtil.getStartTimeHour();
-//        String startTimeMin = prefUtil.getStartTimeMinute();
-//        String endTimeHour = prefUtil.getEndTimeHour();
-//        String endTimeMin = prefUtil.getEndTimeMinute();
+        boolean checkSchedule = prefUtil.getBoolean("confirmSchedule");
+        List<String> getWeekdaysListString = prefUtil.getDaysList();
+        String startTimeHour = prefUtil.getStartTimeHour();
+        String startTimeMin = prefUtil.getStartTimeMinute();
+        String endTimeHour = prefUtil.getEndTimeHour();
+        String endTimeMin = prefUtil.getEndTimeMinute();
 
-//        if(checkSchedule){
-//            if(checkDay(getWeekdaysListString)){
-//                if(checkTime(startTimeHour,startTimeMin,endTimeHour,endTimeMin)){
-//                    if (lockedApps.contains(appRunning)) {
-//                        prefUtil.clearLastApp();
-//                        prefUtil.setLastApp(appRunning);
-//                        killThisPackageIfRunning(context, appRunning);
-//                        Intent i = new Intent(context, ScreenBlocker.class);
-//                        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//                        i.putExtra("broadcast_receiver", "broadcast_receiver");
-//                        context.startActivity(i);
-//                    }
-//                }
-//            }
-//
-//        } else {
+        if(checkSchedule){
+            if(checkDay(getWeekdaysListString)){
+                if(checkTime(startTimeHour,startTimeMin,endTimeHour,endTimeMin)){
+                    if (lockedApps.contains(appRunning)) {
+                        prefUtil.clearLastApp();
+                        prefUtil.setLastApp(appRunning);
+                        killThisPackageIfRunning(context, appRunning);
+                        Intent i = new Intent(context, ScreenBlocker.class);
+                        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                        i.putExtra("broadcast_receiver", "broadcast_receiver");
+                        context.startActivity(i);
+                    }
+                }
+            }
+
+        } else {
             //always BLOCK
             if (lockedApps.contains(appRunning)) {
                 prefUtil.clearLastApp();
@@ -76,7 +76,7 @@ public class ReceiverApplock extends BroadcastReceiver {
                 i.putExtra("broadcast_receiver", "broadcast_receiver");
                 context.startActivity(i);
             }
-//        }
+        }
     }
 
     public boolean checkTime(String startTimeHour, String startTimeMin, String endTimeHour, String endTimeMin) {

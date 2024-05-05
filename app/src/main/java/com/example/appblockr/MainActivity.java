@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     LockedAppAdapter lockedAppsAdapter = new LockedAppAdapter(lockedAppsList, context);
     RecyclerView recyclerView;
     LockedAppAdapter adapter;
-    //Button setScheduleBtn;
+    Button setScheduleBtn;
     ProgressDialog progressDialog;
     LinearLayout emptyLockListInfo, blockingInfoLayout;
     RelativeLayout enableUsageAccess, enableOverlayAccess;
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         blockingInfoLayout = findViewById(R.id.blockingInfoLayout);
         blockingScheduleDescription = findViewById(R.id.blockingScheduleDescription);
         scheduleMode = findViewById(R.id.scheduleMode);
-        // setScheduleBtn = findViewById(R.id.setScheduleBtn);
+//        setScheduleBtn = findViewById(R.id.setScheduleBtn);
         showBlockingInfo();
 
 //        setScheduleBtn.setOnClickListener(new View.OnClickListener() {
@@ -134,21 +134,21 @@ public class MainActivity extends AppCompatActivity {
     @RequiresApi(api = Build.VERSION_CODES.O)
     private void showBlockingInfo(){
         SharedPrefUtil prefUtil = SharedPrefUtil.getInstance(this);
-//        boolean checkSchedule = prefUtil.getBoolean("confirmSchedule");
-//        String startTimeHour = prefUtil.getStartTimeHour();
-//        String startTimeMin = prefUtil.getStartTimeMinute();
-//        String endTimeHour = prefUtil.getEndTimeHour();
-//        String endTimeMin = prefUtil.getEndTimeMinute();
+        boolean checkSchedule = prefUtil.getBoolean("confirmSchedule");
+        String startTimeHour = prefUtil.getStartTimeHour();
+        String startTimeMin = prefUtil.getStartTimeMinute();
+        String endTimeHour = prefUtil.getEndTimeHour();
+        String endTimeMin = prefUtil.getEndTimeMinute();
         List<String> appsList = prefUtil.getLockedAppsList();
-//        List<String> days = prefUtil.getDaysList();
-//        List<String> shortDaysName = new ArrayList<>();
-//        days.forEach(day -> shortDaysName.add(day.substring(0,3)));
+        List<String> days = prefUtil.getDaysList();
+        List<String> shortDaysName = new ArrayList<>();
+        days.forEach(day -> shortDaysName.add(day.substring(0,3)));
         if(appsList.size() > 0){
-//            if(checkSchedule){
-//                scheduleMode.setText("Every " +String.join(", ", shortDaysName) +" from "+ startTimeHour+":"+startTimeMin+" to "+endTimeHour+":"+endTimeMin);
-//            } else {
+            if(checkSchedule){
+                scheduleMode.setText("Every " +String.join(", ", shortDaysName) +" from "+ startTimeHour+":"+startTimeMin+" to "+endTimeHour+":"+endTimeMin);
+            } else {
                 scheduleMode.setText("Always Blocking");
-//            }
+            }
         } else {
             blockingInfoLayout.setVisibility(View.GONE);
         }
@@ -285,8 +285,8 @@ public class MainActivity extends AppCompatActivity {
 //        getMenuInflater().inflate(R.menu.schedule_menu, menu);
 //        return super.onCreateOptionsMenu(menu);
 //    }
-
-    // handle button activities
+//
+//    // handle button activities
 //    @Override
 //    public boolean onOptionsItemSelected(MenuItem item) {
 //        int id = item.getItemId();

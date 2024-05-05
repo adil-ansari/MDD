@@ -23,14 +23,14 @@ public class ServiceApplockJobIntent extends JobIntentService {
     @Override
     public void onTaskRemoved(Intent rootIntent) {
         BackgroundManager.getInstance().init(this).startService();
-        //BackgroundManager.getInstance().init(this).startAlarmManager();
+        BackgroundManager.getInstance().init(this).startAlarmManager();
         super.onTaskRemoved(rootIntent);
     }
 
     @Override
     public void onDestroy() {
         BackgroundManager.getInstance().init(this).startService();
-        //BackgroundManager.getInstance().init(this).startAlarmManager();
+        BackgroundManager.getInstance().init(this).startAlarmManager();
         super.onDestroy();
     }
 
