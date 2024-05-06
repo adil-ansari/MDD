@@ -36,7 +36,7 @@ public class About extends AppCompatActivity {
         View aboutPage = new AboutPage(this)
                 .isRTL(false)
                 .setImage(R.mipmap.ic_launcher_appblckr_icon)
-                .setDescription("AppBlockr \n Version: " + versionName + verCode + "\n Made by \n Adil | Mit | Akash | Sangram")
+                .setDescription("Lockr \n Version: " + versionName + verCode)
                 .create();
 
         setContentView(R.layout.activity_about);

@@ -22,7 +22,7 @@ public class SplashScreen extends AppCompatActivity {
                 .withSplashTimeOut(2000)
                 .withBackgroundColor(Color.parseColor("#495867"))
                 .withLogo(R.mipmap.ic_launcher_foreground)
-                .withAfterLogoText("AppBlockr");
+                .withAfterLogoText("Lockr");
         config.getAfterLogoTextView().setTextColor(Color.WHITE);
 
         View easySplashScreenView = config.create();
