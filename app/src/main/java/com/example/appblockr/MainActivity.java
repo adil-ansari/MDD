@@ -40,11 +40,9 @@ public class MainActivity extends AppCompatActivity {
     static List<AppModel> lockedAppsList = new ArrayList<>();
     static Context context;
     ImageView allAppsBtn;
-    List<AppModel> allInstalledApps = new ArrayList<>();
     LockedAppAdapter lockedAppsAdapter = new LockedAppAdapter(lockedAppsList, context);
     RecyclerView recyclerView;
     LockedAppAdapter adapter;
-    Button setScheduleBtn;
     ProgressDialog progressDialog;
     LinearLayout emptyLockListInfo, blockingInfoLayout;
     RelativeLayout enableUsageAccess, enableOverlayAccess;
@@ -72,16 +70,8 @@ public class MainActivity extends AppCompatActivity {
         blockingInfoLayout = findViewById(R.id.blockingInfoLayout);
         blockingScheduleDescription = findViewById(R.id.blockingScheduleDescription);
         scheduleMode = findViewById(R.id.scheduleMode);
-//        setScheduleBtn = findViewById(R.id.setScheduleBtn);
         showBlockingInfo();
 
-//        setScheduleBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent myIntent = new Intent(MainActivity.this, Schedule.class);
-//                MainActivity.this.startActivity(myIntent);
-//            }
-//        });
         allAppsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -278,23 +268,5 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-
-    // create an action bar button
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.schedule_menu, menu);
-//        return super.onCreateOptionsMenu(menu);
-//    }
-//
-//    // handle button activities
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        int id = item.getItemId();
-//        if (id == R.id.scheduleMenuBtn) {
-//            Intent myIntent = new Intent(MainActivity.this, Schedule.class);
-//            MainActivity.this.startActivity(myIntent);
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
 
 }

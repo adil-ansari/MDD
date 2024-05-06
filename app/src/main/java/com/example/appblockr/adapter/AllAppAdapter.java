@@ -97,7 +97,6 @@ public class AllAppAdapter extends RecyclerView.Adapter<AllAppAdapter.adapter_de
                     holder.appIcon.clearColorFilter();
                     //update data
                     SharedPrefUtil.getInstance(ctx).createLockedAppsList(lockedApps);
-                    //((MainActivity)ctx).updateLockedAppsNotification();
                 } else {
                     app.setStatus(0);
                     holder.appStatus.setImageResource(0);
@@ -105,7 +104,6 @@ public class AllAppAdapter extends RecyclerView.Adapter<AllAppAdapter.adapter_de
                     holder.appIcon.setColorFilter(filter);
                     //update data
                     SharedPrefUtil.getInstance(ctx).createLockedAppsList(lockedApps);
-                    // ((MainActivity)ctx).updateLockedAppsNotification();
                 }
             }
         });

@@ -50,24 +50,12 @@ public class BackgroundManager {
         }
     }
 
-    public void stopService(Class<?> serviceClass) {
-        if (isServiceRunning(serviceClass)) {
-            context.stopService(new Intent(context, serviceClass));
-        }
-    }
 
     public void startAlarmManager() {
         Intent intent = new Intent(context, RestartServiceWhenStopped.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(context, ALARM_ID, intent, 0);
         AlarmManager manager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
         manager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + period, pendingIntent);
-    }
-
-    public void stopAlarm() {
-        Intent intent = new Intent(context, RestartServiceWhenStopped.class);
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, ALARM_ID, intent, 0);
-        AlarmManager manager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
-        manager.cancel(pendingIntent);
     }
 
 }

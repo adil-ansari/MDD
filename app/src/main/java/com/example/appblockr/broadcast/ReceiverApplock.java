@@ -5,7 +5,6 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
-import android.util.Log;
 
 import androidx.annotation.RequiresApi;
 
@@ -14,11 +13,9 @@ import com.example.appblockr.shared.SharedPrefUtil;
 import com.example.appblockr.utils.Utils;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-import static android.content.ContentValues.TAG;
 
 public class ReceiverApplock extends BroadcastReceiver {
     Calendar currentTime;

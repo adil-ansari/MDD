@@ -43,11 +43,4 @@ public class AppModel {
         return packageName;
     }
 
-    public void setPackageName(String packageName) {
-        this.packageName = packageName;
-    }
-
-    public int compareTo(AppModel app) {
-        return this.getAppName().compareTo(app.appName);
-    }
 }

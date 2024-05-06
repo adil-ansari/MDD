@@ -54,9 +54,6 @@ public class ShowAllApps extends AppCompatActivity {
                         overridePendingTransition(0, 0);
                         return true;
                     case R.id.nav_all_apps:
-                      /*  startActivity(new Intent(getApplicationContext(),
-                                ShowAllApps.class));
-                        overridePendingTransition(0,0);*/
                         return true;
                     case R.id.nav_settings:
                         startActivity(new Intent(getApplicationContext(),
