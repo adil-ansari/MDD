@@ -1,4 +1,4 @@
-package com.example.appblockr.broadcast;
+package com.example.lockr.broadcast;
 
 import android.app.ActivityManager;
 import android.content.BroadcastReceiver;
@@ -8,9 +8,9 @@ import android.os.Build;
 
 import androidx.annotation.RequiresApi;
 
-import com.example.appblockr.ScreenBlocker;
-import com.example.appblockr.shared.SharedPrefUtil;
-import com.example.appblockr.utils.Utils;
+import com.example.lockr.ScreenBlocker;
+import com.example.lockr.shared.SharedPrefUtil;
+import com.example.lockr.utils.Utils;
 
 import java.time.LocalDate;
 import java.util.Calendar;

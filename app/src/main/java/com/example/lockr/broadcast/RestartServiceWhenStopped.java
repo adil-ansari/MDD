@@ -1,4 +1,4 @@
-package com.example.appblockr.broadcast;
+package com.example.lockr.broadcast;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

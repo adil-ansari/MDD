@@ -1,4 +1,4 @@
-package com.example.appblockr.utils;
+package com.example.lockr.utils;
 
 import android.app.ActivityManager;
 import android.app.AppOpsManager;

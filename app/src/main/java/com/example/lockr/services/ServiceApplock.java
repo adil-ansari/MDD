@@ -1,11 +1,11 @@
-package com.example.appblockr.services;
+package com.example.lockr.services;
 
 import android.app.IntentService;
 import android.content.Intent;
 
 import androidx.annotation.Nullable;
 
-import com.example.appblockr.broadcast.ReceiverApplock;
+import com.example.lockr.broadcast.ReceiverApplock;
 
 public class ServiceApplock extends IntentService {
 

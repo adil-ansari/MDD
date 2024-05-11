@@ -1,4 +1,4 @@
-package com.example.appblockr.services;
+package com.example.lockr.services;
 
 import android.content.Context;
 import android.content.Intent;
@@ -6,7 +6,7 @@ import android.content.Intent;
 import androidx.annotation.NonNull;
 import androidx.core.app.JobIntentService;
 
-import com.example.appblockr.broadcast.ReceiverApplock;
+import com.example.lockr.broadcast.ReceiverApplock;
 
 public class ServiceApplockJobIntent extends JobIntentService {
     private static final int JOB_ID = 15462;

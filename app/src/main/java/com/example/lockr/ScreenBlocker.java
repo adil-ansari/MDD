@@ -1,4 +1,4 @@
-package com.example.appblockr;
+package com.example.lockr;
 
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
@@ -11,7 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.appblockr.shared.SharedPrefUtil;
+import com.example.lockr.shared.SharedPrefUtil;
 
 public class ScreenBlocker extends AppCompatActivity {
     Button close_btn;

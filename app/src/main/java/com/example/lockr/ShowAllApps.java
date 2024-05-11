@@ -1,4 +1,4 @@
-package com.example.appblockr;
+package com.example.lockr;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -20,9 +20,9 @@ import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.appblockr.adapter.AllAppAdapter;
-import com.example.appblockr.model.AppModel;
-import com.example.appblockr.shared.SharedPrefUtil;
+import com.example.lockr.adapter.AllAppAdapter;
+import com.example.lockr.model.AppModel;
+import com.example.lockr.shared.SharedPrefUtil;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
@@ -106,7 +106,7 @@ public class ShowAllApps extends AppCompatActivity {
             String name = activityInfo.loadLabel(getPackageManager()).toString();
             Drawable icon = activityInfo.loadIcon(getPackageManager());
             String packageName = activityInfo.packageName;
-            if (!packageName.matches("com.robocora.appsift|com.android.settings")) {
+            if (!packageName.matches("com.appsift|com.android.settings")) {
                 if (!prefLockedAppList.isEmpty()) {
                     //check if apps is locked
                     if (prefLockedAppList.contains(packageName)) {

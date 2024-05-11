@@ -1,4 +1,4 @@
-package com.example.appblockr.shared;
+package com.example.lockr.shared;
 
 import android.content.Context;
 import android.content.SharedPreferences;

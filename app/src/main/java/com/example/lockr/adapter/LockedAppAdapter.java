@@ -1,4 +1,4 @@
-package com.example.appblockr.adapter;
+package com.example.lockr.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,9 +10,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.appblockr.R;
-import com.example.appblockr.model.AppModel;
-import com.example.appblockr.shared.SharedPrefUtil;
+import com.example.lockr.R;
+import com.example.lockr.model.AppModel;
+import com.example.lockr.shared.SharedPrefUtil;
 
 import java.util.ArrayList;
 import java.util.List;

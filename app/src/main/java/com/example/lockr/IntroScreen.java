@@ -1,4 +1,4 @@
-package com.example.appblockr;
+package com.example.lockr;
 
 import android.app.ActionBar;
 import android.app.AlertDialog;
@@ -15,7 +15,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
-import com.example.appblockr.adapter.SliderAdapter;
+import com.example.lockr.adapter.SliderAdapter;
 
 public class IntroScreen extends AppCompatActivity {
     String pp_string;

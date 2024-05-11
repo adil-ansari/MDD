@@ -1,4 +1,4 @@
-package com.example.appblockr;
+package com.example.lockr;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -11,9 +11,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.appblockr.adapter.LockedAppAdapter;
-import com.example.appblockr.model.AppModel;
-import com.example.appblockr.shared.SharedPrefUtil;
+import com.example.lockr.adapter.LockedAppAdapter;
+import com.example.lockr.model.AppModel;
+import com.example.lockr.shared.SharedPrefUtil;
 
 import java.util.ArrayList;
 import java.util.List;

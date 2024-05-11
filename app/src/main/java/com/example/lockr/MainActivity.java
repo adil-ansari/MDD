@@ -1,4 +1,4 @@
-package com.example.appblockr;
+package com.example.lockr;
 
 import android.app.AppOpsManager;
 import android.app.ProgressDialog;
@@ -12,10 +12,8 @@ import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -27,10 +25,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.appblockr.adapter.LockedAppAdapter;
-import com.example.appblockr.model.AppModel;
-import com.example.appblockr.services.BackgroundManager;
-import com.example.appblockr.shared.SharedPrefUtil;
+import com.example.lockr.adapter.LockedAppAdapter;
+import com.example.lockr.model.AppModel;
+import com.example.lockr.services.BackgroundManager;
+import com.example.lockr.shared.SharedPrefUtil;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;

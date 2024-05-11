@@ -1,4 +1,4 @@
-package com.example.appblockr;
+package com.example.lockr;
 
 import android.graphics.Color;
 import android.os.Bundle;

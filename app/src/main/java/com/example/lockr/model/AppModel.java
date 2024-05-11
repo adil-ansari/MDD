@@ -1,4 +1,4 @@
-package com.example.appblockr.model;
+package com.example.lockr.model;
 
 import android.graphics.drawable.Drawable;
 

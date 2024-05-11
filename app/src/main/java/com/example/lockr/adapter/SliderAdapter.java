@@ -1,4 +1,4 @@
-package com.example.appblockr.adapter;
+package com.example.lockr.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,7 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
-import com.example.appblockr.R;
+import com.example.lockr.R;
 
 public class SliderAdapter extends PagerAdapter {
     public TextView privacyPopup;
@@ -21,13 +21,13 @@ public class SliderAdapter extends PagerAdapter {
             R.drawable.icon3
     };
     public String[] slide_headings = {
-            "Welcome to AppBlockr",
+            "Welcome to Lockr",
             "Simple blocker",
             "Free from distractions"
     };
     public String[] slide_description = {
             "A simple way to block distractions from social media apps.",
-            "Unlike other app blockers, AppBlockr will do what it's exactly made for.",
+            "Unlike other app blockers, Lockr will do what it's exactly made for.",
             "By continuing, you agree to our privacy policy"
     };
     Context context;

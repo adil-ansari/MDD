@@ -1,4 +1,4 @@
-package com.example.appblockr.services;
+package com.example.lockr.services;
 
 import android.app.ActivityManager;
 import android.app.AlarmManager;
@@ -7,7 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 
-import com.example.appblockr.broadcast.RestartServiceWhenStopped;
+import com.example.lockr.broadcast.RestartServiceWhenStopped;
 
 public class BackgroundManager {
     private static final int period = 15 * 1000;
