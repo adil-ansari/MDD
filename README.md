@@ -30,11 +30,34 @@ An app palette that allows the user to select the applications they want to lock
 A list where each entry represents a locked app. We can update this list by tapping on a list item and the app will be removed from the list, effectively unlocking the application. This functionality allows us to edit our selection of locked apps. 
 
 ### Locking an application using Lockr - Tutorial
-#### Step 1: Enabling permissions
-- 
+#### Step 1: Enabling permissions (One-time setup)
+- Tap on 'ENABLE' next to 'Display over apps'
+- Select Lockr app from the list
+- Toggle 'Allow display over other apps'
+- Navigate back to the app
+- Tap on 'ENABLE' next to 'Usage Access'
+- Select Lockr app from the list
+- Toggle 'Permit usage access'
+- Navigate back to the app
+
+And you are all set to start locking apps
+
 #### Step 2: Selecting apps to be locked
+- Navigate to the 'All Apps' tab to open the app pallete to view all the apps that are selected / can be selected.
+- Tap on the icons of the app you want to lock
+- Navigate back to the 'Locked Apps' tab
+
 #### Step 3: Viewing locked apps
+- After you navigate back to the 'Locked Apps' tab you will see a list consisting of all the apps that are locked.
+
 #### Step 4: Checking if the desired app is locked
+- Exit the Lockr app and try accessing the app/s you locked via Lockr.
+- You will notice a blocking screen introduced by 'Lockr' over your locked app. 
+
+#### Step 4: Unlocking apps [Optional]
+- Open the Lockr app
+- Navigate to the 'Locked Apps' tab, if not already taken to this tab by default
+- Tap on the delete icon corresponding to the app that you want to unlock and it will be removed from the list
 
 ## Video Tutorial
 [App Demo](https://drive.google.com/drive/folders/1omKmLpCH0TgD6riMiFxV-k_lerwy1hw1?usp=sharing)
