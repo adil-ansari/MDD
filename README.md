@@ -44,7 +44,7 @@ A list where each entry represents a locked app. We can update this list by tapp
 And you are all set to start locking apps
 
 #### Step 2: Selecting apps to be locked
-- Navigate to the 'All Apps' tab to open the app pallete to view all the apps that are selected / can be selected.
+- Navigate to the 'All Apps' tab to open the app palette to view all the apps that are selected / can be selected.
 - Tap on the icons of the app you want to lock
 - Navigate back to the 'Locked Apps' tab
 
